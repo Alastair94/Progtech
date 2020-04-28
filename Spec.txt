@@ -1,0 +1,15 @@
+A program célja:
+
+A program segítségével nyilvántarthatjuk az aktuális félév, 
+illetve a már teljesített félévek adatait.
+Regisztrálhatunk féléveket, adott félévhez felvehetünk tárgyakat, amiknek a részleteit:
+(Név, Kód, Kredit, Típus, Óraszám, Oktató, FelvételSzáma) nekünk kell megadni.
+Statisztikákat nézhetünk az adott félévvel kapcsolatban:
+(Felvett tárgyak száma, teljesített tárgyak száma, bukott tárgyak száma, felvett kreditek, teljesített kreditek)
+Valamint adott félévre kilistázhatjuk az összes felvett tárgyat, azoknak az összes adataival.
+
+Megfelelt elvek:
+
+Tervezési minták:
+
+Unit test-ek:
