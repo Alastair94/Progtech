@@ -1,15 +1,13 @@
 A program célja:
 
-A program segítségével nyilvántarthatjuk az aktuális félév, 
-illetve a már teljesített félévek adatait.
-Regisztrálhatunk féléveket, adott félévhez felvehetünk tárgyakat, amiknek a részleteit:
-(Név, Kód, Kredit, Típus, Óraszám, Oktató, FelvételSzáma) nekünk kell megadni.
-Statisztikákat nézhetünk az adott félévvel kapcsolatban:
-(Felvett tárgyak száma, teljesített tárgyak száma, bukott tárgyak száma, felvett kreditek, teljesített kreditek)
-Valamint adott félévre kilistázhatjuk az összes felvett tárgyat, azoknak az összes adataival.
-
-Megfelelt elvek:
-
+Egy gyros-t árusító büfé működését implementálni.
+	
 Tervezési minták:
+- Template-method -> Milyen gyros készüljön el (pita/tortilla, feltétek, etc..), a sorrend fontos, mi miután következik.
+- Decorator -> A különböző akciókat a díszítő tervezési mintával valósítanám meg(Közös ős a rendelés, a díszítendő a gyros, a díszítés pedig az akció, amit alkalmazva az ételen annak ára olcsóbb lesz.
+- A rendeléseket factory-methoddal készíteném el (ez még csak elméletben van meg, később változhat)
 
-Unit test-ek:
+Unit-testek:
+- A rendelés végösszege nem lehet negatív szám.
+- A gyrosnak mindenképp tartalmaznia kell pitát vagy tortillját.
+- A feltétet egy gyroshoz csak egyszer lehet felhasználni.
