@@ -4,6 +4,7 @@ package gyrosbufe;
  *
  * @author Szondi Máté
  */
+
 public abstract class Gyros {
     public void keszit(){
         AlapElkeszit();
