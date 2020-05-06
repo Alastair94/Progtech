@@ -7,12 +7,14 @@ package gyrosbufe;
 
 public abstract class Gyros {
     public void keszit(){
+        NevKiIr();
         AlapElkeszit();
         HustHozzaAd();
         ZoldsegetBele();
         SzoszBele();
         Felszolgal();
     }
+    protected abstract void NevKiIr();
     
     protected abstract void AlapElkeszit();
     
@@ -20,7 +22,7 @@ public abstract class Gyros {
         System.out.println("A húst leszelem a forgatósütőről, majd elhelyezem az előkészített alaphoz.");
     }
     
-    protected abstract void ZoldsegetBele();
+    protected void ZoldsegetBele(){};
     
     protected void SzoszBele(){};
     
