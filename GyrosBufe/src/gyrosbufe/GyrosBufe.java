@@ -55,7 +55,9 @@ public class GyrosBufe {
                 tortilla.keszit();
                 break;
             case 3:
-                //TODO: GyrosTál
+                Gyros tal = new GyrosTal(zoldsegek, szoszok);
+                tal.keszit();
+                break;
             default:
                 System.out.println("Ilyen számozású gyros-szal nem rendelkezünk!");
                 break;
