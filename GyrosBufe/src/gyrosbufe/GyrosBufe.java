@@ -14,14 +14,22 @@ public class GyrosBufe {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        GyrosFactory factory = new GyrosFactory();
+        
         
         List<String> zoldsegek = new ArrayList<>();
         List<String> szoszok = new ArrayList<>();
         
         System.out.println("Milyen gyrost szeretnél venni?");
-        System.out.println("1 - Pita \n2 - Tortilla \n3 - Tál");
+        System.out.println("- pita \n- tortilla \n- tal");
         
-        int tipus = Integer.parseInt(br.readLine());
+        String tipus = br.readLine();
+        
+        while(!(tipus.equals("pita") || tipus.equals("tortilla") || tipus.equals("tal"))){
+            System.out.println("Kérlek pontosan írd le, mit szeretnél kérni a felsorolt gyrosok közül!");
+            tipus = br.readLine();
+        }
+        
         
         System.out.println("Milyen zöldségeket kérsz a gyrosodhoz?");
         System.out.println("(Üres ENTER ha nem kérsz zöldséget/nem kérsz mást)");
@@ -45,23 +53,10 @@ public class GyrosBufe {
             szoszok.add(szosz);
         }
         
-        switch(tipus){
-            case 1:
-                Gyros pita = new GyrosPitaban(zoldsegek, szoszok);
-                pita.keszit();
-                break;
-            case 2:
-                Gyros tortilla = new GyrosTortillaban(zoldsegek, szoszok);
-                tortilla.keszit();
-                break;
-            case 3:
-                Gyros tal = new GyrosTal(zoldsegek, szoszok);
-                tal.keszit();
-                break;
-            default:
-                System.out.println("Ilyen számozású gyros-szal nem rendelkezünk!");
-                break;
-        }
+        Gyros gyros = factory.createGyros(tipus, zoldsegek, szoszok);
+        gyros.keszit();
+        
+        System.out.println("");
         
         Rendeles r1 = new Egyszemelyes();
         System.out.println(r1.kiir());
