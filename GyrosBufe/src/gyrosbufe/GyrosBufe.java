@@ -58,18 +58,27 @@ public class GyrosBufe {
         
         System.out.println("");
         
+//        Rendeles r1 = new Egyszemelyes();
+//        System.out.println(r1.kiir());
+//        Rendeles r2 = new Minusz_500(r1);
+//        System.out.println(r2.kiir());
+//        Rendeles r3 = new Minusz_1000(r2);
+//        System.out.println(r3.kiir());
+
         Rendeles r1 = new Egyszemelyes();
         System.out.println(r1.kiir());
         Rendeles r2 = new Minusz_500(r1);
         System.out.println(r2.kiir());
-        Rendeles r3 = new Minusz_1000(r2);
+        Rendeles r3 = new Minusz_500(r2);
         System.out.println(r3.kiir());
-
+        
+        System.out.println("");
+        
         Rendeles r10 = new KetSzemelyes();
         System.out.println(r10.kiir());
         Rendeles r11 = new Minusz_1000(r10);
         System.out.println(r11.kiir());
-        
+
         
     }
     

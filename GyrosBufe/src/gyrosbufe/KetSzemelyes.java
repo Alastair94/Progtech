@@ -5,15 +5,25 @@ package gyrosbufe;
  * @author Szondi Máté
  */
 public class KetSzemelyes extends Rendeles {
-
-    @Override
-    public String kiir() {
-        return "A kétszemélyes menü ára: " + ar() + "Ft.";
-    }
-
-    @Override
-    public int ar() {
-        return 2500;
+    private int ar;
+    public KetSzemelyes(){
+        cnt = 0;
+        this.ar = 2500;
     }
     
+    
+    @Override
+    public String kiir() {
+        return "A kétszemélyes menü ára: " + getAr() + "Ft.";
+    }
+
+    @Override
+    public int getAr() {
+        return ar;
+    }
+    
+    @Override
+    public void setAr(int ar){
+        this.ar = ar;
+    }
 }
