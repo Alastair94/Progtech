@@ -26,7 +26,14 @@ public abstract class Engedmeny extends Rendeles {
     }
     @Override
     public int getAr(){
-        return rendeles.getAr() - getEngedmenyOsszeg() > 0 ? rendeles.getAr() - getEngedmenyOsszeg() : rendeles.getAr();
+        if(cnt <= 1){
+            if ((rendeles.getAr() - getEngedmenyOsszeg()) > 0)
+                return rendeles.getAr() - getEngedmenyOsszeg();
+            else
+                return rendeles.getAr();
+        }
+        else
+           return rendeles.getAr();
     }
     
     public abstract String engedmenyKiir();

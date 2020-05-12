@@ -1,14 +1,18 @@
 package gyrosbufe;
 
+import java.util.List;
+
 /**
  *
  * @author Szondi Máté
  */
-public class Egyszemelyes extends Rendeles {
+public class EgySzemelyes extends Rendeles {
     private int ar;
-    public Egyszemelyes(){
+    private List<Gyros> list;
+    public EgySzemelyes(List<Gyros> list){
         cnt = 0;
-        this.ar = 1500;
+        this.list = list;
+        this.ar = 1500 * this.list.size();
     }
     
     @Override

@@ -11,10 +11,6 @@ public class Minusz_500 extends Engedmeny {
         cnt++;
     }
 
-//    @Override
-//    public String engedmenyKiir() {
-//        return "+ 500 Ft-os kuponnal: " + ((rendeles.getAr() - getEngedmenyOsszeg()) > 0 ? (rendeles.getAr() - getEngedmenyOsszeg()) : rendeles.getAr());
-//    }
     @Override
     public String engedmenyKiir() {
         return "+ 500 Ft-os kuponnal: " + (rendeles.getAr() - getEngedmenyOsszeg());

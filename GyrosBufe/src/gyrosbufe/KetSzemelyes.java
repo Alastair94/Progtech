@@ -1,14 +1,18 @@
 package gyrosbufe;
 
+import java.util.List;
+
 /**
  *
  * @author Szondi Máté
  */
 public class KetSzemelyes extends Rendeles {
     private int ar;
-    public KetSzemelyes(){
+    private List<Gyros> list;
+    public KetSzemelyes(List<Gyros> list){
         cnt = 0;
-        this.ar = 2500;
+        this.list = list;
+        this.ar = 2500 * this.list.size();
     }
     
     
