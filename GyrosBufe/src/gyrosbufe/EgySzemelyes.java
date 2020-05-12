@@ -27,6 +27,7 @@ public class EgySzemelyes extends Rendeles {
     
     @Override
     public void setAr(int ar){
-        this.ar = ar;
+        if(ar >= 100)
+            this.ar = ar;
     }
 }

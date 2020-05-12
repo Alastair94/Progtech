@@ -28,6 +28,7 @@ public class KetSzemelyes extends Rendeles {
     
     @Override
     public void setAr(int ar){
-        this.ar = ar;
+        if(ar >= 200)
+            this.ar = ar;
     }
 }
