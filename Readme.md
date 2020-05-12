@@ -9,5 +9,5 @@ Tervezési minták:
 
 Unit-testek:
 - A rendelés végösszege nem lehet negatív szám.
-- A gyrosnak mindenképp tartalmaznia kell pitát vagy tortillját.
-- A feltétet egy gyroshoz csak egyszer lehet felhasználni.
+- Nem lehet egy rendeléshez 1-nél több kupont felhasználni.
+- Ne lehessen negatív árat beállítani az Egyszemélyes/Többszemélyes adagnál.
