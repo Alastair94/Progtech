@@ -30,4 +30,6 @@ public abstract class Gyros {
         System.out.println("Az elkészült ételt felszolgálom a vásárlónak.");
     }
     
+    protected String Ar(){return null;};
+    
 }
